@@ -14,7 +14,8 @@ const int mModeAll    =3;
 const int mMaxPlay=4;
 
 const int mBit_MAX=8;
-const int mLED_MAX=4;
+//const int mLED_MAX=4;
+const int mLED_MAX=3;
 
 const int mWait_US=5;
 // const int mColor_White=0;
@@ -268,7 +269,8 @@ void display_color(string sRes){
       LED_Color_RGB(i_R, i_G, i_B );
     }
     LED_Set();
-    wait(2.5);
+//    wait(2.5);
+    wait(2);
 
     for(int n=0;n< mLED_MAX;n++){
       LED_Color_RGB(0x00, 0x00, 0x00);
